@@ -1,0 +1,8 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Rect Boilerplate code with various configurations",
+  "main": "index.js",
+  "author": "Saurabh",
+  "license": "MIT"
+}
