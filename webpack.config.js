@@ -80,6 +80,7 @@ module.exports = {
     compress: true, // GZip Compression
     // publicPath: 'public/',
     // port: 9000,
+    historyApiFallback: true,
     stats: 'errors-only',
     open: true,
     hot: true

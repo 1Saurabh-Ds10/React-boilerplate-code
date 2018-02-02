@@ -6,7 +6,7 @@
        "env",
       {
         "targets": {
-          "browsers": "last 4 versions"
+          "browsers": "last 6 versions"
         },
         "loose": false,
         "modules": false
@@ -27,6 +27,7 @@
       "plugins": ["transform-es2015-modules-commonjs"]
     },
     "test": {
+     
       "plugins": ["transform-es2015-modules-commonjs"]
     }
   }

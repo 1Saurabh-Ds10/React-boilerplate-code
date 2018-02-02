@@ -13,9 +13,9 @@
     "watch": "webpack --watch",
     "prod": "npm run clean && set NODE_ENV=prod && webpack -p",
     "build:dev": "npm run clean && webpack -d",
-    "test": "set NODE_ENV=test && jest",
-    "test:update": "set NODE_ENV=test && jest -u",
-    "test:coverage": "set NODE_ENV=test && jest --coverage"
+    "test": "jest",
+    "test:update": "jest -u",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -34,6 +34,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "8.2.1",
+    "babel-jest": "^22.1.0",
     "babel-loader": "7.1.2",
     "babel-plugin-dynamic-import-node": "1.2.0",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
