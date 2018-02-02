@@ -1,15 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './css/reset.css';
-import big from './img/15.jpg';
+import { AppContainer } from 'react-hot-loader';
 
-const App = () => {
-  return (
-    <div className='my-app'>
-      <h1> Hello World</h1>
-      <img src={big} alt='big' />
-    </div>
+import './css/reset.css';
+import Main from './js/Main';
+
+const renderMain = () => {
+  render(
+    <AppContainer>
+      <Main />
+    </AppContainer>,
+    document.getElementById('app')
   );
 };
 
-render(<App />, document.getElementById('app'));
+renderMain();
+
+if (module.hot) {
+  module.hot.accept();
+}

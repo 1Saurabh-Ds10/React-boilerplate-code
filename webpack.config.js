@@ -19,7 +19,9 @@ const cssProd = ExtractTextPlugin.extract({
 module.exports = {
   context: __dirname,
   entry: {
-    bundle: './src/App.js',
+    bundle: ['react-hot-loader/patch',
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server','./src/App.js'],
     vendor: VENDOR_LIBS
   },
   devtool: 'cheap-eval-source-map',
